@@ -4,5 +4,8 @@
 
 // for stroing data we need a container called as variables
 fullname= "Jai Stark"
-
+age = 25;
+price= 99.99;
+a= null;
+y= undefined;
 console.log(fullname);
