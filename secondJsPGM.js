@@ -1,5 +1,7 @@
 /*
 1. typeof is used to find the type of data we used
+2. If we do not define any variable then we also get the result undefined
+3. null is the object by default
 */
 
 // Data Types in JS
@@ -8,6 +10,26 @@
 let a= 6.56;
 let b= true;
 let c= -190.878;// numbers can be negative or positive
+let fullName= "Jai";
 console.log(typeof a);
 console.log(typeof(b));
 console.log(typeof c);
+console.log(typeof fullName);
+
+//by defualt all data types are undefined if not initialize the value
+
+x= null;
+console.log(typeof x); 
+
+let y= BigInt("123");
+let z= Symbol("Hello ");
+console.log(y);
+console.log(z);
+
+//Non-primitive Data Types are Objects(Arrays and funxtions are the subcategories of it)
+//objects are the collection of values means agar bht saari vakues of store and save karvana hai toh usse object bola jata h. 
+//in object key: value pair are stored inside the curly braces
+
+
+
+
