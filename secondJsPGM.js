@@ -29,7 +29,21 @@ console.log(z);
 //Non-primitive Data Types are Objects(Arrays and funxtions are the subcategories of it)
 //objects are the collection of values means agar bht saari vakues of store and save karvana hai toh usse object bola jata h. 
 //in object key: value pair are stored inside the curly braces
+// generally declare objects with use of const, also we use let
+// example of declaring an object
 
+const student= {
+fullName : "Jai Watson", // key= fullName and value = Jai Watson
+age : 20,
+cgpa : 8.6,
+isPass : true,
+};
 
+console.log(student);
+// so student is now an object that is the collection of different variables
+
+//now to access keys(in this example keys are = fullName, age, cgpa,isPass)
+console.log(student["fullName"]); //1st way to access 
+console.log(student.fullName); //2nd way to access 
 
 
