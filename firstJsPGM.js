@@ -9,9 +9,17 @@ full-name -> kebab case
 FullName -> Pascal Case
 
 3. We have to use keyword with variable like 
-let, var, const 
-let and const are the more favourable keywords used in Javascript
+-let, var, const 
+-let and const are the more favourable keywords used in Javascript
+-cant use var becaise it is already used before 2015 as we got new standard
+ and rules that is ES6 (Ecma Script 6) 
 
+ 4. a) var - variable van be re-declared and updated. A global scope variable
+    b) let - Variable cannot be re-declared but can be updated. A Block scope variable
+    c) const - Varibale cannot be re-declared or updated. A block scope variable
+
+ 5. By default any variable declared and we cannot assign any value to it then it should be undefined
+ 
 */
 // for printing something on screen we use console. 
 console.log("First JS Programin");
@@ -50,3 +58,9 @@ console=23;
 console.log(console);// wrong
 
 // ----------------------------------------
+
+//declaring variables using let keyword
+let fullName = "Jai";
+console.log(fullName);
+
+ 
