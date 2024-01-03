@@ -19,6 +19,7 @@ FullName -> Pascal Case
     c) const - Varibale cannot be re-declared or updated. A block scope variable
 
  5. By default any variable declared and we cannot assign any value to it then it should be undefined
+ 6. In case of 'const' keyword the error should arised said that initial value should be given. (const declaration must be initalized)
  
 */
 // for printing something on screen we use console. 
