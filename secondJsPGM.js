@@ -2,6 +2,7 @@
 1. typeof is used to find the type of data we used
 2. If we do not define any variable then we also get the result undefined
 3. null is the object by default
+4. we can change the constant object keys
 */
 
 // Data Types in JS
@@ -46,4 +47,6 @@ console.log(student);
 console.log(student["fullName"]); //1st way to access 
 console.log(student.fullName); //2nd way to access 
 
-
+//manipulation of the object variables
+student["age"] = student.age + 1;
+console.log(student.age);
