@@ -38,9 +38,9 @@ do{
 }while(i<=10);
 
 //'for of' loop and 'for in' loop, these loops are used to iterate on some special data types 
-//'for of' loop was used to Strings and Arrays
 
 //----for-of loop--------------
+// 'for of' loop was used to Strings and Arrays but not used for the objects 
 /*
 for(let val of strVar){
     //do the work
@@ -66,3 +66,56 @@ j= A
  j= g
  j= e
 */
+
+//Q. Calculating the size of the string
+let str1="JavaScript"; // space will be counted
+let size=0;
+
+for(let k of str1){
+    size++;
+}
+console.log("String Size will be",size)
+
+//---for in was used in case of objects (use of keys here)
+
+/*
+for(let key in objVar){
+    //do some work
+}
+*/
+//making of object(here name, age, cgpa and isPass is the key)
+let student={
+    name: "Rahul Kumar",
+    age: 20,
+    cgpa: 7.5,
+    isPass: true,
+};
+
+//returns the key
+for(let m in student){
+    console.log("Key=",m,"and Value=",student[m]);
+}
+
+// so with the help of for in loop we will access the key value pair?
+
+//Q. Print all even numbers between 0 to 100
+for(let p=0; p<=100;p++)
+{
+    if(p%2==0)
+    {
+        console.log(p);
+    }
+}
+
+/* Q. Create a game where you start with any random game number.
+    Ask the user to keep guessing the game number until the user enters correct value*/
+
+//--------Number guessing game---------
+let gameNum= 25;
+let userNum= prompt("Guess the game number");
+
+
+while(userNum != gameNum){
+    userNum= prompt("You entered a wrong number, Guess again");
+}
+console.log("Congratulations you entered the right number");
